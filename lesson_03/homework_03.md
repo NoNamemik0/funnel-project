@@ -4,11 +4,11 @@
 
 | Поле | Значение |
 |---|---|
-| Фамилия, имя, отчество |  |
-| Группа |  |
+| Фамилия, имя, отчество | Коковашин Тимур Александрович |
+| Группа | 11/1-РПО-26/1 |
 | Номер работы | 3 |
 | Тема работы | Установка Google Tag, источник перехода и отчёты GA4 |
-| Дата сдачи |  |
+| Дата сдачи | 09.11.2026 |
 
 ---
 
@@ -16,15 +16,15 @@
 
 | Поле | Значение |
 |---|---|
-| Адрес репозитория сайта |  |
-| Публичный адрес сайта |  |
-| Статус публикации | READY / ERROR |
-| Analytics Account |  |
-| Property |  |
-| Stream name |  |
-| Website URL в потоке |  |
-| Measurement ID (`G-…`) |  |
-| Страницы с тегом |  |
+| Адрес репозитория сайта | https://github.com/NoNamemik0/ga4-analytics-lab |
+| Публичный адрес сайта | https://ga4-analytics-lab.vercel.app |
+| Статус публикации | READY |
+| Analytics Account | Timur (ID 413981975) |
+| Property | ga4-analytics-lab (ID 563327002) |
+| Stream name | ga4-analytics-lab web |
+| Website URL в потоке | https://ga4-analytics-lab.vercel.app |
+| Measurement ID (`G-…`) | G-HPBCWZ1Q71 |
+| Страницы с тегом | index.html, about.html, contacts.html |
 
 Тег ставится на каждую страницу по одному разу: две копии дают двойные
 события.
@@ -33,22 +33,22 @@
 
 **Результат проверки из инструкции тега:**
 
->
+> Tag Assistant подключён к ga4-analytics-lab.vercel.app: «Найден тег Google» G-HPBCWZ1Q71, источник — тег gtag('config') на странице.
 
-Скриншот: вставьте строку `![Сообщение об обнаружении тега Google](screens/01-tag-detected.png)`
+![Сообщение об обнаружении тега Google](screens/01-tag-detected.png)
 
-Скриншот: вставьте строку `![Код тега на странице, виден Measurement ID](screens/02-tag-in-code.png)`
+![Код тега на странице, виден Measurement ID](screens/02-tag-in-code.png)
 
 ## 3. События доходят до аналитики
 
 | Поле | Значение |
 |---|---|
-| Дата и время проверки |  |
-| Какие страницы открывали |  |
-| Какие события появились в Realtime |  |
-| Число активных пользователей в момент проверки |  |
+| Дата и время проверки | 09.11.2026, около 17:45 (МСК) |
+| Какие страницы открывали | Home, About, Contacts |
+| Какие события появились в Realtime | page_view, first_visit, session_start, scroll, user_engagement, а также свои события сайта |
+| Число активных пользователей в момент проверки | 1 |
 
-Скриншот: вставьте строку `![Realtime с событием page_view](screens/03-realtime.png)`
+![Realtime с событием page_view](screens/03-realtime.png)
 
 ## 4. Источник перехода определился
 
@@ -58,7 +58,7 @@
 **Ссылка целиком:**
 
 ```
-
+https://ga4-analytics-lab.vercel.app/?utm_source=telegram&utm_medium=social&utm_campaign=ga4_lab
 ```
 
 | Поле | Значение |
